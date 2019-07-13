@@ -1,0 +1,79 @@
+Doing away with the package-lock.json made no difference. Using the non-minified version of the Semantic CSS file gives some interesting insights in what is failing - it is far from all elements that are rejected. Here's a list of what breaks within the first 10,000 lines:
+
+Error in parsing value for ‘-webkit-text-size-adjust’. Declaration dropped. semantic.css:67:29
+
+Unknown property ‘font-smoothing’. Declaration dropped. semantic.css:576:18
+
+Ruleset ignored due to bad selector. semantic.css:729:32
+
+Ruleset ignored due to bad selector. semantic.css:733:32
+
+Ruleset ignored due to bad selector. semantic.css:747:44
+
+Ruleset ignored due to bad selector. semantic.css:751:44
+
+Unknown property ‘user-select’. Declaration dropped. semantic.css:801:15
+
+Error in parsing value for ‘will-change’. Declaration dropped. semantic.css:806:16
+
+Error in parsing value for ‘background-image’. Declaration dropped. semantic.css:837:21
+
+Error in parsing value for ‘-webkit-box-shadow’. Declaration dropped. semantic.css:838:23
+
+Error in parsing value for ‘box-shadow’. Declaration dropped. semantic.css:839:15
+
+Error in parsing value for ‘background-image’. Declaration dropped. semantic.css:853:21
+
+Error in parsing value for ‘-webkit-box-shadow’. Declaration dropped. semantic.css:855:58
+
+Error in parsing value for ‘box-shadow’. Declaration dropped. semantic.css:856:50
+
+Error in parsing value for ‘padding’. Declaration dropped. semantic.css:1224:12
+
+Error in parsing value for ‘vertical-align’. Declaration dropped. semantic.css:1452:19
+
+Expected color but found ‘""’. Error in parsing value for ‘color’. Declaration dropped. semantic.css:1453:10
+
+Error in parsing value for ‘-webkit-box-shadow’. Declaration dropped. semantic.css:1627:23
+
+Error in parsing value for ‘box-shadow’. Declaration dropped. semantic.css:1628:15
+
+Error in parsing value for ‘-webkit-box-shadow’. Declaration dropped. semantic.css:1640:113
+
+Error in parsing value for ‘box-shadow’. Declaration dropped. semantic.css:1641:105
+
+Error in parsing value for ‘-webkit-box-shadow’. Declaration dropped. semantic.css:1645:110
+
+Error in parsing value for ‘box-shadow’. Declaration dropped. semantic.css:1646:102
+
+Error in parsing value for ‘-webkit-box-shadow’. Declaration dropped. semantic.css:1650:23
+
+Error in parsing value for ‘box-shadow’. Declaration dropped. semantic.css:1651:15
+
+Expected color but found ‘""’. Error in parsing value for ‘color’. Declaration dropped. semantic.css:1748:10
+
+Unknown property ‘user-select’. Declaration dropped. semantic.css:5309:15
+
+Error in parsing value for ‘margin’. Declaration dropped. semantic.css:5341:11
+
+Error in parsing value for ‘margin’. Declaration dropped. semantic.css:5412:13
+
+Unknown property ‘speak’. Declaration dropped. semantic.css:5573:9
+
+Unknown property ‘font-smoothing’. Declaration dropped. semantic.css:5574:18
+
+Error in parsing value for ‘font-size’. Declaration dropped. semantic.css:6945:14
+
+Expected color but found ‘""’. Error in parsing value for ‘color’. Declaration dropped. semantic.css:7063:10
+
+Unknown descriptor ‘font-variant’ in @font-face rule. Skipped to next declaration. semantic.css:7675:16
+
+Unknown descriptor ‘text-decoration’ in @font-face rule. Skipped to next declaration. semantic.css:7676:19
+
+Unknown descriptor ‘text-transform’ in @font-face rule. Skipped to next declaration. semantic.css:7677:18
+
+Unknown property ‘speak’. Declaration dropped. semantic.css:7691:9
+
+Unknown property ‘font-smoothing’. Declaration dropped. semantic.css:7692:18
+
+Unknown property ‘-moz-osx-font-smoothing’. Declaration dropped.semantic.css:7693:27
